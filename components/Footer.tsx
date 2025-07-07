@@ -17,8 +17,8 @@ const Footer = () => {
         setForm({ ...form, [name]: value });
     };
 
-    const handleSubmit = (e: () => void) => {
-        // e.preventDefault();
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
         const mailtoLink = `mailto:harshit70803hs@gmail.com?subject=Message from ${form.name}&body=Name: ${form.name}%0AEmail: ${form.email}%0A%0A${form.message}`;
         window.location.href = mailtoLink;
     };
@@ -168,7 +168,7 @@ const Footer = () => {
                                 title="Send Message"
                                 icon={<FaLocationArrow />}
                                 position='right'
-                                handleClick={handleSubmit}
+                            // handleClick={handleSubmit}
                             />
                         </div>
                     </form>

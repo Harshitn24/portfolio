@@ -133,9 +133,8 @@ export const socialMedia = [
 ];
 
 // import type { TimelineEntry } from "@/types/timeline";
-import type { TimelineEntry } from "../types/timeline";
 
-export const workExperience: TimelineEntry[] = [
+export const workExperience = [
   {
     id: 1,
     title: "Jul'25 - present",
