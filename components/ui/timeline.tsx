@@ -74,7 +74,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                                     </ p >
                                     <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200">
                                         {item.content.map((content, idx) => (
-                                            <li className="mb-2">
+                                            <li key={idx} className="mb-2">
                                                 {content}
                                             </li>
                                         ))}
