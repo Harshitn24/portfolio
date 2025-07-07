@@ -7,7 +7,7 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems } from "@/data";
+import { navItems } from "@/data/index";
 
 
 export default function Home() {
@@ -16,14 +16,14 @@ export default function Home() {
     justify-center items-center flex-col
     mx-auto sm:px-10 px-5 font-inter overflow-clip">
       <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} className="font-inter"/>
-        <Hero/>
+        <FloatingNav navItems={navItems} className="font-inter" />
+        <Hero />
         <Grid />
-        <RecentProjects/>
+        <RecentProjects />
         {/* <Clients/> */}
-        <Experience/>
-        <Approach/>
-        <Footer/>
+        <Experience />
+        <Approach />
+        <Footer />
       </div>
     </main>
   );

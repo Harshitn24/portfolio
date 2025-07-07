@@ -1,10 +1,33 @@
+"use client"
+
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { ColourfulText } from './ui/colourful-text'
+import { TypewriterEffect } from './ui/typewriterEffect'
+import { LinearGradient } from 'react-text-gradients'
+
 
 const Hero = () => {
+    const words = [
+        {
+            text: "AI/ML",
+        },
+        {
+            text: "Engineer",
+        },
+        {
+            text: "and",
+        },
+        {
+            text: "CSE",
+        },
+        {
+            text: "Student.",
+        },
+    ];
     return (
         <div className='pb-20 pt-36'>
             <div>
@@ -22,16 +45,22 @@ const Hero = () => {
 
             <div className='flex justify-center relative my-20 z-10'>
                 <div className='max-w-[89w] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                    <h2 className='uppercase tracking-widest text-xs text-center font-inter text-blue-100 max-w-80'>
+                    {/* <h2 className='uppercase tracking-widest text-xs text-center font-inter text-blue-100 max-w-80'>
                         Dynamic Web Magic With Next.js
-                    </h2>
+                    </h2> */}
 
-                    <TextGenerateEffect
-                        words='Transforming Concepts into Seamless User Experiences'
-                        className='font-inter text-center text-[40px] md:text-5xl lg:text-6xl' />
+                    <TextGenerateEffect className='font-inter text-center text-[40px] md:text-5xl lg:text-6xl'>
+                        Hi, I'm<LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
+                            Harshit
+                        </LinearGradient>
+                    </TextGenerateEffect>
+
+                    <div className='text-center md:tracking-wider mb-4 text-[20px] md:text-xl lg:text-4xl font-inter'>
+                        <TypewriterEffect words={words} />
+                    </div>
 
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-inter'>
-                        Hi, I&apos;m Harshit, a Full Stack Web Developer based in India.
+                        AI/ML Engineer with hands-on experience in RAG systems, LLM fine-tuning, MCP server integration, and agentic AI workflows. Skilled in building scalable AI pipelines and applying supervised, unsupervised learning, and classic ML techniques. Passionate about creating real-world, production-ready AI solutions.
                     </p>
 
                     <a href='#projects'>
