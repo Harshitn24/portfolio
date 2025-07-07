@@ -58,7 +58,7 @@ const Footer = () => {
 
             <div className='flex flex-col items-center'>
                 <h1 className='heading lg:max-w-[45vw]'>
-                    Let's {' '}<span className='text-purple'>Collaborate</span>
+                    Let&apos;s {' '}<span className='text-purple'>Collaborate</span>
                 </h1>
                 {/* <a href="mailto:harshit70803hs@gmail.com">
                     <MagicButton

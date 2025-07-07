@@ -50,7 +50,7 @@ const Hero = () => {
                     </h2> */}
 
                     <TextGenerateEffect className='font-inter text-center text-[40px] md:text-5xl lg:text-6xl'>
-                        Hi, I'm<LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
+                        Hi, I&apos;m<LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
                             Harshit
                         </LinearGradient>
                     </TextGenerateEffect>
