@@ -132,10 +132,12 @@ export const socialMedia = [
   },
 ];
 
-// import { CardSpotlight } from "@/components/ui/card-spotlight";
+// import type { TimelineEntry } from "@/types/timeline";
+import type { TimelineEntry } from "../types/timeline";
 
-export const workExperience = [
+export const workExperience: TimelineEntry[] = [
   {
+    id: 1,
     title: "Jul'25 - present",
     job_title: "AI/ML Engineer",
     company: "DRC Systems, Gandhinagar",
@@ -159,6 +161,7 @@ export const workExperience = [
     ]
   },
   {
+    id: 2,
     title: "Jan'25 - Jun'25",
     job_title: "AI/ML Intern",
     company: "DRC Systems, Gandhinagar",
@@ -182,6 +185,7 @@ export const workExperience = [
     ]
   },
   {
+    id: 3,
     title: "jun'24 - Aug'24",
     job_title: "FullStack Intern",
     company: "DLTitan, Bengaluru",
@@ -199,6 +203,7 @@ export const workExperience = [
     ]
   },
   {
+    id: 4,
     title: "Apr'24 - May'24",
     job_title: "Summer Intern",
     company: "Supplo, UK (Remote)",

@@ -7,15 +7,15 @@ import {
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import { CardSpotlight } from "./card-spotlight";
+import type { TimelineEntry } from "@/types/timeline";
 
-interface TimelineEntry {
-    title: string;
-    job_title: string;
-    company: string;
-    content: string[];
-    tech_stack: string[];
-    // content: React.ReactNode;
-}
+// export interface TimelineEntry {
+//     title: string;
+//     job_title: string;
+//     company: string;
+//     content: string[];
+//     tech_stack: string[];
+// }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     const ref = useRef<HTMLDivElement>(null);
