@@ -6,10 +6,15 @@ import {
     motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { CardSpotlight } from "./card-spotlight";
 
 interface TimelineEntry {
     title: string;
-    content: React.ReactNode;
+    job_title: string;
+    company: string;
+    content: string[];
+    tech_stack: string[];
+    // content: React.ReactNode;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -58,10 +63,38 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                         </div>
 
                         <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                            <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                                {item.title}
-                            </h3>
-                            {item.content}{" "}
+                            <CardSpotlight>
+                                <div>
+                                    <p className="mb-2 text-xl font-normal text-neutral-800 md:text-2xl lg:text-3xl dark:text-neutral-200" >
+                                        {item.job_title}
+                                    </ p >
+
+                                    <p className="mb-8 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
+                                        {item.company}
+                                    </ p >
+                                    <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200">
+                                        {item.content.map((content, idx) => (
+                                            <li className="mb-2">
+                                                {content}
+                                            </li>
+                                        ))}
+                                    </ul>
+
+                                    <div className="flex flex-wrap gap-2 ml-3 mt-6">
+                                        {item.tech_stack.map((item) => (
+                                            <span
+                                                key={item}
+                                                className="py-2 px-3 text-s lg:text-lg opacity-80 rounded-lg text-center bg-white/20 backdrop-blur-md border border-white/10 rounded-xl shadow-lg"
+                                            >
+                                                {item}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </CardSpotlight>
+
+
+                            {/* {item.content}{" "} */}
                         </div>
                     </div>
                 ))}

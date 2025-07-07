@@ -132,140 +132,88 @@ export const socialMedia = [
   },
 ];
 
-import { CardSpotlight } from "@/components/ui/card-spotlight";
+// import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 export const workExperience = [
   {
     title: "Jul'25 - present",
-    content: (
-      <CardSpotlight>
-        <div>
-          <p className="mb-2 text-xl font-normal text-neutral-800 md:text-2xl lg:text-3xl dark:text-neutral-200" >
-            AI/ML Engineer
-          </ p >
-
-          <p className="mb-8 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            DRC Systems, Gandhinagar
-          </ p >
-
-          <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            <li className="mb-2">Developed an AI-powered Q&A system that extracts and answers questions from video/audio using Whisper, LLMs, and LangChain.</li>
-            <li className="mb-2">Built and deployed FastAPI APIs for document processing (PDF, DOCX, images) and content summarization.</li>
-            <li className="mb-2">Worked with text, image, and audio preprocessing pipelines for AI applications.</li>
-            <li className="mb-2">Integrated GenAI tools and experimented with agentic AI workflows using LangChain and Hugging Face Transformers.</li>
-          </ul>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {["Python", "GenAI", "NLP", "Machine Learning", "Computer Vision", "Langchain", "Whisper(STT)", "LLM", "AI Pipeline", "HuggingFace Transformers"].map((item) => (
-              <span
-                key={item}
-                className="py-2 px-3 text-xs lg:text-sm opacity-80 rounded-lg text-center bg-white/20 backdrop-blur-md border border-white/10 rounded-xl shadow-lg"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </CardSpotlight>
-    ),
+    job_title: "AI/ML Engineer",
+    company: "DRC Systems, Gandhinagar",
+    content: [
+      "Developed an AI-powered Q&A system that extracts and answers questions from video/audio using Whisper, LLMs, and LangChain.",
+      "Built and deployed FastAPI APIs for document processing (PDF, DOCX, images) and content summarization.",
+      "Worked with text, image, and audio preprocessing pipelines for AI applications.",
+      "Integrated GenAI tools and experimented with agentic AI workflows using LangChain and Hugging Face Transformers.",
+    ],
+    tech_stack: [
+      "Python",
+      "GenAI",
+      "NLP",
+      "Machine Learning",
+      "Computer Vision",
+      "Langchain",
+      "Whisper(STT)",
+      "LLM",
+      "AI Pipeline",
+      "HuggingFace Transformers"
+    ]
   },
   {
     title: "Jan'25 - Jun'25",
-    content: (
-      <CardSpotlight>
-        <div>
-          <p className="mb-2 text-xl font-normal text-neutral-800 md:text-2xl lg:text-3xl dark:text-neutral-200" >
-            AI/ML Intern
-          </ p >
-
-          <p className="mb-8 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            DRC Systems, Gandhinagar
-          </ p >
-
-          <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            <li className="mb-2">Developed an AI-powered Q&A system that extracts and answers questions from video/audio using Whisper, LLMs, and LangChain.</li>
-            <li className="mb-2">Built and deployed FastAPI APIs for document processing (PDF, DOCX, images) and content summarization.</li>
-            <li className="mb-2">Worked with text, image, and audio preprocessing pipelines for AI applications.</li>
-            <li className="mb-2">Integrated GenAI tools and experimented with agentic AI workflows using LangChain and Hugging Face Transformers.</li>
-          </ul>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {["Python", "GenAI", "NLP", "Machine Learning", "Computer Vision", "Langchain", "Whisper(STT)", "LLM", "AI Pipeline", "HuggingFace Transformers"].map((item) => (
-              <span
-                key={item}
-                className="py-2 px-3 text-xs lg:text-sm opacity-80 rounded-lg text-center bg-white/20 backdrop-blur-md border border-white/10 rounded-xl shadow-lg"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </CardSpotlight>
-    ),
+    job_title: "AI/ML Intern",
+    company: "DRC Systems, Gandhinagar",
+    content: [
+      "Developed an AI-powered Q&A system that extracts and answers questions from video/audio using Whisper, LLMs, and LangChain.",
+      "Built and deployed FastAPI APIs for document processing (PDF, DOCX, images) and content summarization.",
+      "Worked with text, image, and audio preprocessing pipelines for AI applications.",
+      "Integrated GenAI tools and experimented with agentic AI workflows using LangChain and Hugging Face Transformers.",
+    ],
+    tech_stack: [
+      "Python",
+      "GenAI",
+      "NLP",
+      "Machine Learning",
+      "Computer Vision",
+      "Langchain",
+      "Whisper(STT)",
+      "LLM",
+      "AI Pipeline",
+      "HuggingFace Transformers"
+    ]
   },
   {
     title: "jun'24 - Aug'24",
-    content: (
-      <CardSpotlight>
-        <div>
-          <p className="mb-2 text-xl font-normal text-neutral-800 md:text-2xl lg:text-3xl dark:text-neutral-200" >
-            FullStack Intern
-          </ p >
-
-          <p className="mb-8 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            DLTitan, Bengaluru
-          </ p >
-
-          <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            <li className="mb-2">Developed and optimized AI-driven legal document generation tools, enhancing efficiency and integration through Docker.</li>
-            <li className="mb-2">Collaborated with cross-functional teams to ensure seamless integration of AI solutions into existing workflows.</li>
-            <li className="mb-2">Utilized Docker for containerization, ensuring consistent development and deployment environments.</li>
-            <li className="mb-2">Conducted thorough testing and validation of AI models to ensure accuracy and reliability in legal document generation.</li>
-          </ul>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {["Python", "RAG", "HuggingFace", "Docker"].map((item) => (
-              <span
-                key={item}
-                className="py-2 px-3 text-xs lg:text-sm opacity-80 rounded-lg text-center bg-white/20 backdrop-blur-md border border-white/10 rounded-xl shadow-lg"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </CardSpotlight>
-    ),
+    job_title: "FullStack Intern",
+    company: "DLTitan, Bengaluru",
+    content: [
+      "Developed and optimized AI-driven legal document generation tools, enhancing efficiency and integration through Docker.",
+      "Collaborated with cross-functional teams to ensure seamless integration of AI solutions into existing workflows.",
+      "Utilized Docker for containerization, ensuring consistent development and deployment environments.",
+      "Conducted thorough testing and validation of AI models to ensure accuracy and reliability in legal document generation.",
+    ],
+    tech_stack: [
+      "Python",
+      "RAG",
+      "HuggingFace",
+      "Docker"
+    ]
   },
   {
     title: "Apr'24 - May'24",
-    content: (
-      <CardSpotlight>
-        <div>
-          <p className="mb-2 text-xl font-normal text-neutral-800 md:text-2xl lg:text-3xl dark:text-neutral-200" >
-            Summer Intern
-          </ p >
-
-          <p className="mb-8 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            Supplo, UK (Remote)
-          </ p >
-
-          <ul className="list-disc pl-7 text-md font-normal text-neutral-800 md:text-lg lg:text-xl dark:text-neutral-200" >
-            <li className="mb-2">Built a supplier search engine to find retailers based on product and region inputs.</li>
-            <li className="mb-2">Developed web scraping tools to extract supplier data from regional online sources.</li>
-            <li className="mb-2">Used LLMs to refine and structure scraped data into clean, usable contact information.</li>
-            <li className="mb-2">Contributed to backend integration and API development using FastAPI.</li>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {["Python", "Web Scraping", "Beautifulsoap", "FastAPI"].map((item) => (
-                <span
-                  key={item}
-                  className="py-2 px-3 text-xs lg:text-sm opacity-80 rounded-lg text-center bg-white/20 backdrop-blur-md border border-white/10 rounded-xl shadow-lg"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </ul>
-        </div>
-      </CardSpotlight>
-    ),
-  },
+    job_title: "Summer Intern",
+    company: "Supplo, UK (Remote)",
+    content: [
+      "Built a supplier search engine to find retailers based on product and region inputs.",
+      "Developed web scraping tools to extract supplier data from regional online sources.",
+      "Used LLMs to refine and structure scraped data into clean, usable contact information.",
+      "Contributed to backend integration and API development using FastAPI.",
+    ],
+    tech_stack: [
+      "Python",
+      "Web Scraping",
+      "BeautifulSoup",
+      "FastAPI"
+    ],
+  }
 ];
 
