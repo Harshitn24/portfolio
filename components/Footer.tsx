@@ -175,7 +175,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2025 harshit</p>
+            <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2026 harshit</p>
             {/* <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
 
 
